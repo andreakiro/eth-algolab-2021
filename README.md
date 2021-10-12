@@ -11,6 +11,6 @@ Solutions for problems of the ETH Zürich [Algorithms Lab](https://cadmo.ethz.ch
 ## Weeky Problems
 | Week  | Subject | Problems |
 | ------------- | ------------- | ------------- |
-| [Week 1](/week01)  | Partial sums and tricks  | <ul><li>[Build the Sum](/week01/build-the-sum/build-the-sum.pdf)</li><li>[Dominoes](/week01/dominoes/dominoes.pdf)</li><li>[Even Pairs](/week01/even-pairs/even-pairs.pdf)</li><li>[***Even Matrices***]()</li></ul>|
-| [Week 2](/week02)  | Dynamic Programming and Sliding Window  | <ul><li>[Beach Bars](/week02/beach-bars/beach-bars.pdf)</li><li>[Burning Coins](/week02/burning-coins/burning-coins.pdf)</li><li>[***The Great Game***]()</li><li>[***Defensive Line***]()</li></ul>|
+| [Week 1](/week01)  | Partial sums <br> Math tricks  | <ul><li>[Build the Sum](/week01/build-the-sum/build-the-sum.pdf)</li><li>[Dominoes](/week01/dominoes/dominoes.pdf)</li><li>[Even Pairs](/week01/even-pairs/even-pairs.pdf)</li><li>[***Even Matrices***]()</li></ul>|
+| [Week 2](/week02)  | Sliding Window <br> Dynamic Programming | <ul><li>[Beach Bars](/week02/beach-bars/beach-bars.pdf)</li><li>[Burning Coins](/week02/burning-coins/burning-coins.pdf)</li><li>[***The Great Game***]()</li><li>[***Defensive Line***]()</li></ul>|
 | [Week 3](/week03)  | CGAL  | <ul><li>[Hit](/week03/hit/hit.pdf)</li><li>[First Hit](/week03/first-hit/first-hit.pdf)</li><li>[***Antenna***]()</li><li>[***Hiking Maps***]()</li></ul>|
