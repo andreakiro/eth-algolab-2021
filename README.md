@@ -1,11 +1,10 @@
 # eth-algolab-2021
 Solutions for problems of the ETH Zürich [Algorithms Lab](https://cadmo.ethz.ch/education/lectures/HS21/algolab) course 2021/22.
----
 
 ## Problems of the Week — pows
 | Week     | Subject | Problem |
 | -------- | ------------- | ------------- |
-| [Week 2]() | Sliding Window  | ***[Deck of Cards]***() |
+| [Week 2]() | Sliding Window  | [***Deck of Cards***]() |
 | [Week 3](/pows/03-from-russia-with-love) | Dynamic Programming  | [From Russia With Love](/pows/03-from-russia-with-love/from-russia-with-love.pdf) |
 | [Week 4]() | Dynamic Programming  | ***[The Fighting Pits of Meereen]***() |
 ---
