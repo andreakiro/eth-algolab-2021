@@ -4,7 +4,7 @@ Solutions for problems of the ETH Zürich [Algorithms Lab](https://cadmo.ethz.ch
 ## Problems of the Week — pows
 | Week     | Subject | Problem |
 | -------- | ------------- | ------------- |
-| [Week 2](pows/02-deck-of-cards) | Sliding Window  | [Deck of Cards](pows/deck-of-cards/src/main.cpp) |
+| [Week 2](pows/02-deck-of-cards) | Sliding Window  | [Deck of Cards](pows/02-deck-of-cards/src/main.cpp) |
 | [Week 3](/pows/03-from-russia-with-love) | Dynamic Programming  | [From Russia With Love](/pows/03-from-russia-with-love/src/main.cpp) |
 | [Week 4]() | Dynamic Programming  | [***The Fighting Pits of Meereen***]() |
 
