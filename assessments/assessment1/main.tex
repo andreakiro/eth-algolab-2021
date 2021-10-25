@@ -1,0 +1,69 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage[top=2cm, bottom=4.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+
+% Edit these as appropriate
+\newcommand\course{Algorithms Lab HS2021}
+\newcommand\hwnumber{1}
+\newcommand\NetIDa{Andrea}
+\newcommand\NetIDb{Pinto}
+
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{\NetIDa}
+\lhead{\NetIDa\\\NetIDb}
+\chead{\textbf{\Large Assessment \hwnumber}}
+\rhead{\course \\ \today}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\headsep 2.5em
+
+\begin{document}
+\small
+\subsection*{Code submission: 100\%}
+\begin{verbatim}
+#include <iostream>
+#include <vector>
+
+using namespace std;
+typedef vector<int> vint;
+
+int n, m, k;
+
+int profit(vint &coins, vector<vint> &memo, int i, int j) {
+  if (j < i) return 0;
+  if (memo[i][j] != -1) return memo[i][j];
+  
+  int p1 = profit(coins, memo, i + 1, j);
+  int p2 = profit(coins, memo, i, j - 1);
+  bool myturn = (n - (j - i + 1)) % m == k;
+  
+  if (myturn) return memo[i][j] = max(coins[i] + p1, coins[j] + p2);
+  else return memo[i][j] = min(p1, p2);
+}
+
+void solve() {
+  cin >> n >> m >> k;
+  vint coins(n);
+  vector<vint> memo(n, vint(n, -1));
+  for (int i = 0; i < n; i++) cin >> coins[i];
+  cout << profit(coins, memo, 0, n - 1) << endl;
+}
+
+int main() {
+  ios_base::sync_with_stdio(false);
+  int t; cin >> t;
+  for (int i = 0; i < t; i++) solve();
+}
+\end{verbatim}
+\end{document}
