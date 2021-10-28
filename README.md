@@ -8,13 +8,15 @@ Solutions for problems of the ETH Zürich [Algorithms Lab](https://cadmo.ethz.ch
 | [Week 3](/pows/03-from-russia-with-love) | Dynamic Programming  | [From Russia With Love](/pows/03-from-russia-with-love/src/main.cpp) |
 | [Week 4]() | Dynamic Programming  | [***The Fighting Pits of Meereen***]() |
 | [Week 5]() | CGAL  | [***Motorcycles***]() |
+| [Week 6]() | BGL  | [***Planet Express***]() |
 
 ## Weeky Problems
 | Week  | Subject | Problems |
 | ------------- | ------------- | ------------- |
 | [Week 1](/week01)  | Partial sums <br> Math tricks  | <ul><li>[Build the Sum](/week01/build-the-sum/src/main.cpp)</li><li>[Dominoes](/week01/dominoes/src/main.cpp)</li><li>[Even Pairs](/week01/even-pairs/src/main.cpp)</li><li>[Even Matrices](/week01/even-matrices/src/main.cpp)</li></ul>|
-| [Week 2](/week02)  | Sliding Window <br> Dynamic Programming | <ul><li>[Beach Bars](/week02/beach-bars/src/main.cpp)</li><li>[Burning Coins](/week02/burning-coins/src/main.cpp)</li><li>[***The Great Game***]()</li><li>[***Defensive Line***]()</li></ul>|
+| [Week 2](/week02)  | Sliding Window <br> Dynamic Programming (DP) | <ul><li>[Beach Bars](/week02/beach-bars/src/main.cpp)</li><li>[Burning Coins](/week02/burning-coins/src/main.cpp)</li><li>[***The Great Game***]()</li><li>[***Defensive Line***]()</li></ul>|
 | [Week 3](/week03)  | CGAL  | <ul><li>[Hit](/week03/hit/src/main.cpp)</li><li>[First Hit](/week03/first-hit/src/main.cpp)</li><li>[Antenna](/week03/antenna/src/main.cpp)</li><li>[***Hiking Maps***]()</li></ul>|
 | [Week 4](/week04)  | BGL  | <ul><li>[First Steps with BGL](/week04/first-steps-bgl/src/main.cpp)</li><li>[Ant Challenge](/week04/ant-challenge/src/main.cpp)</li><li>[Buddy Selection](/week04/buddy-selection/src/main.cpp)</li><li>[Important Bridges](/week04/important-bridges/src/main.cpp)</li></ul>|
 | [Week 5](/week05)  | Greedy algorithms <br> Split & List | <ul><li>[Boats](/week05/boats/src/main.cpp)</li><li>[Moving Books](/week05/moving-books/src/main.cpp)</li><li>[***Severus Snape***](/week05/severus-snape/src/main.cpp)</li><li>[***Asterix The Gaul***](/week05/asterix-the-gaul/src/main.cpp)</li></ul>|
+| [Week 6](/week06)  | Linear Programming (LP) | <ul><li>[What is the Max?](/week06/what-is-the-max/src/main.cpp)</li><li>[***Diest***](/week06/diet/src/main.cpp)</li><li>[***Inball***](/week06/inball/src/main.cpp)</li><li>[***Lannister***](/week06/lannister/src/main.cpp)</li></ul>|
 
