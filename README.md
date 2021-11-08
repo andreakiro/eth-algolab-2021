@@ -9,7 +9,8 @@ Solutions for problems of the ETH Zürich [Algorithms Lab](https://cadmo.ethz.ch
 | [Week 4]() | Dynamic Programming  | [***The Fighting Pits of Meereen***]() |
 | [Week 5]() | CGAL  | [***Motorcycles***]() |
 | [Week 6]() | BGL  | [***Planet Express***]() |
-| [Week 7](/pows/07-octopussy) | Greey  | [Octopussy](/pows/07-octopussy/src/main.cpp) |
+| [Week 7](/pows/07-octopussy) | Greedy  | [Octopussy](/pows/07-octopussy/src/main.cpp) |
+| [Week 8](/pows/08-suez) | Linear Programming  | [Suez](/pows/08-suez/src/main.cpp) |
 
 ## Weeky Problems
 | Week  | Subject | Problems |
