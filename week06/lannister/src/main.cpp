@@ -31,32 +31,27 @@ void solve() {
     commons[i] = make_pair(x, y);
   }
   
-  
   Program lp(CGAL::SMALLER, false, 0, false, 0);
-  const int a = 0, b = 1, c = 2, d = 3, l = 4;
-  int row = 0;
+  int a = 0, b = 1, cs = 2, cw = 3, l = 4, row = 0;
   
-  for (int i = 0; i < n; i++) {
-    // ax + by + c <= 0
-    lp.set_a(a, row, nobles[i].first);
-    lp.set_a(b, row, nobles[i].second);
-    lp.set_a(c, row, 1);
-    row++;
-  }
-  
-  for (int i = 0; i < m; i++) {
-    // ax + by + c >= 0 <=> -ax - by - c <= 0
-    lp.set_a(a, row, -commons[i].first);
-    lp.set_a(b, row, -commons[i].second);
-    lp.set_a(c, row, -1);
-    row++;
-  }
-  
-  // encorce a != 0
+  // Enforce a == 1
   lp.set_l(a, true, 1);
   lp.set_u(a, true, 1);
   
-  // Linearly separable data
+  // Cersei constraint:
+  
+  for (int i = 0; i < n; i++) {
+    lp.set_a(a, row, nobles[i].first);
+    lp.set_a(b, row, nobles[i].second);
+    lp.set_a(cs, row++, 1);
+  }
+  
+  for (int i = 0; i < m; i++) {
+    lp.set_a(a, row, -commons[i].first);
+    lp.set_a(b, row, -commons[i].second);
+    lp.set_a(cs, row++, -1);
+  }
+  
   Solution s1 = CGAL::solve_linear_program(lp, ET());
   
   if (s1.is_infeasible()) { 
@@ -64,13 +59,13 @@ void solve() {
     return;
   }
   
+  // Tywin constraint:
+  
   if (s != -1) {
+    lp.set_a(cs, row, m - n);
     lp.set_a(b, row, sum_cy - sum_ny);
-    lp.set_a(c, row, m - n);
-    lp.set_b(row, s - (sum_cx - sum_nx));
-    row++;
+    lp.set_b(row++, s - (sum_cx - sum_nx));
     
-    // Sum of all sewage pipes <= s
     Solution s2 = CGAL::solve_linear_program(lp, ET());
 
     if (s2.is_infeasible()) {
@@ -79,43 +74,32 @@ void solve() {
     }
   }
   
-  for (int i = 0; i < n; i++) {
-    // length nobles water pipe <= l
-    lp.set_a(b, row, nobles[i].first);
-    lp.set_a(d, row, 1);
+  // Jaime optimization:
+  
+  int hx, hy = 0;
+  
+  for (int i = 0; i < n + m; i++) {
+    if (i < n) { hx = nobles[i].first; hy = nobles[i].second; } 
+    else { hx = commons[i-n].first; hy = commons[i-n].second; }
+    
+    lp.set_a(b, row, hx);
+    lp.set_a(cw, row, 1);
     lp.set_a(l, row, -1);
-    lp.set_b(row, nobles[i].second);
-    row++;
-    lp.set_a(b, row, -nobles[i].first);
-    lp.set_a(d, row, -1);
+    lp.set_b(row++, hy);
+    
+    lp.set_a(b, row, -hx);
+    lp.set_a(cw, row, -1);
     lp.set_a(l, row, -1);
-    lp.set_b(row, -nobles[i].second);
-    row++;
+    lp.set_b(row++, -hy);
   }
   
-  for (int i = 0; i < m; i++) {
-    // length commons water pipe <= l
-    lp.set_a(b, row, commons[i].first);
-    lp.set_a(d, row, 1);
-    lp.set_a(l, row, -1);
-    lp.set_b(row, commons[i].second);
-    row++;
-    lp.set_a(b, row, -commons[i].first);
-    lp.set_a(d, row, -1);
-    lp.set_a(l, row, -1);
-    lp.set_b(row, -commons[i].second);
-    row++;
-  }
-  
-  // Ensure positive length 
-  lp.set_l(l, true, 0);
+  // Enforce positive length
+  lp.set_l(l, true, 0); 
   
   // Minimize length
   lp.set_c(l, 1);
   
-  // Minimization problem on longest water pipe
   Solution s3 = CGAL::solve_linear_program(lp, ET());
-  
   cout << fixed << setprecision(0) << ceil(CGAL::to_double(s3.objective_value())) << endl;
 }
 
