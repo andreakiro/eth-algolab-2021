@@ -83,12 +83,12 @@ void solve() {
     else { hx = commons[i-n].first; hy = commons[i-n].second; }
     
     lp.set_a(b, row, hx);
-    lp.set_a(cw, row, 1);
+    lp.set_a(cw, row, -1);
     lp.set_a(l, row, -1);
     lp.set_b(row++, hy);
     
     lp.set_a(b, row, -hx);
-    lp.set_a(cw, row, -1);
+    lp.set_a(cw, row, 1);
     lp.set_a(l, row, -1);
     lp.set_b(row++, -hy);
   }
