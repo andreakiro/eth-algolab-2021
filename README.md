@@ -12,6 +12,7 @@ Solutions for problems of the ETH Zürich [Algorithms Lab](https://cadmo.ethz.ch
 | [Week 7](/pows/07-octopussy) | Greedy  | [Octopussy](/pows/07-octopussy/src/main.cpp) |
 | [Week 8](/pows/08-suez) | Linear Programming  | [Suez](/pows/08-suez/src/main.cpp) |
 | [Week 9](/pows/09-kingdom-defence) | BGL Flows  | [Kingdom Defence](/pows/09-kingdom-defence/src/main.cpp) |
+| [Week 10](/pows/10-goldeneye) | Proximity structures  | [***Golden Eye***](/pows/10-goldeneye/src/main.cpp) |
 
 ## Weeky Problems
 | Week  | Subject | Problems |
