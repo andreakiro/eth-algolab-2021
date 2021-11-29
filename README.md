@@ -13,6 +13,7 @@ Solutions for problems of the ETH Zürich [Algorithms Lab](https://cadmo.ethz.ch
 | [Week 8](/pows/08-suez) | Linear Programming  | [Suez](/pows/08-suez/src/main.cpp) |
 | [Week 9](/pows/09-kingdom-defence) | BGL Flows  | [Kingdom Defence](/pows/09-kingdom-defence/src/main.cpp) |
 | [Week 10](/pows/10-goldeneye) | Proximity structures  | [***Golden Eye***](/pows/10-goldeneye/src/main.cpp) |
+| [Week 11](/pows/11-phantom-menace) | BGL Flows  | [Phantom Menace](/pows/11-phantom-menace/src/main.cpp) |
 
 ## Weeky Problems
 | Week  | Subject | Problems |
@@ -26,3 +27,4 @@ Solutions for problems of the ETH Zürich [Algorithms Lab](https://cadmo.ethz.ch
 | [Week 7](/week07)  | BGL Flows | <ul><li>[Shopping Trip](/week07/shopping-trip/src/main.cpp)</li><li>[Knights](/week07/knights/src/main.cpp)</li><li>[Coin Tossing](/week07/coin-tossing/src/main.cpp)</li><li>[***London***](/week07/london/src/main.cpp)</li></ul>|
 | [Week 8](/week08)  | Proximity structures | <ul><li>[Bistro](/week08/bistro/src/main.cpp)</li><li>[Germs](/week08/germs/src/main.cpp)</li><li>[H1N1](/week08/h1n1/src/main.cpp)</li><li>[***Light The Stage***](/week08/light-the-stage/src/main.cpp)</li></ul>|
 | [Week 9](/week09)  | Advanced BGL Flows| <ul><li>[Real Estate](week09/real-estate/src/main.cpp)</li><li>[***Placing Knights***]()</li><li>[***Algocooon Group***]()</li><li>[Canteen]()</li></ul>|
+| [Week 10](/week10)  | Exam Preparation| <ul><li>[World Cup](week10/world-cup/src/main.cpp)</li><li>[***Asterix in Switzerland***]()</li><li>[***Asterix Chariot Race***]()</li><li>[***Evolution***]()</li></ul>|
